@@ -14,6 +14,7 @@
 	"author": "Olushola",
 	"license": "ISC",
 	"dependencies": {
-		"cypress": "^12.10.0"
+		"cypress": "^12.10.0",
+		"cypress-cucumber-preprocessor": "^4.3.1"
 	}
 }
