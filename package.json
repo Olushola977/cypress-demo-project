@@ -9,6 +9,14 @@
 		"cy:open": "./node_modules/.bin/cypress open",
 		"cy:tags": "./node_modules/.bin/cypress-tags run"
 	},
+	"cypress-cucumber-preprocessor": {
+		"cucumberJson": {
+			"generate": true,
+			"outputFolder": "cypress/cucumber_report",
+			"filePrefix": "",
+			"fileSuffix": ".cucumber"
+		}
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Olushola977/cypress-demo-project.git"
@@ -17,6 +25,7 @@
 	"author": "Olushola",
 	"license": "ISC",
 	"dependencies": {
+		"cucumber-html-reporter": "^6.0.0",
 		"cypress": "^12.10.0",
 		"cypress-cucumber-preprocessor": "^4.3.1"
 	}
