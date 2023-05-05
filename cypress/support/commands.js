@@ -7,7 +7,14 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
-//
+
+Cypress.Commands.add("login", (email, password) => {
+	cy.visit("/client")
+	cy.get("input[id='userEmail']").type(email)
+	cy.get("input[id='userPassword']").type(password)
+	cy.get("input[id='login']").click()
+})
+
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })

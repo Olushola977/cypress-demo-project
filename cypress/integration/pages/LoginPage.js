@@ -8,6 +8,8 @@ class LoginPage {
 
 	loginButton = "input[id='login']"
 
+	errorMsg = ".invalid-feedback div"
+
 	//Get web elements with locators
 	getEmailField() {
 		return cy.get(this.emailInput)
@@ -17,6 +19,9 @@ class LoginPage {
 	}
 	getLoginBtn() {
 		return cy.get(this.loginButton)
+	}
+	getErrorMsg() {
+		return cy.get(this.errorMsg)
 	}
 
 	//Interact with the web elements
